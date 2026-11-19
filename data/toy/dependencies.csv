@@ -1,0 +1,7 @@
+service_id,service_name,depends_on,dependency_type,confidence,evidence
+PXXXXXX,checkout-api,orders-api,http,0.9,client/OrdersClient.java:42
+PXXXXXX,checkout-api,kafka:checkout.orders,queue,0.95,consumer/OrdersConsumer.java:18
+PXXXXXX,checkout-api,postgres:checkout,database,0.9,config/application.yml:db
+PZZZZZZ,fraud-gateway,payments-fraud.internal,dns,0.95,client/FraudClient.java:21
+PZZZZZZ,fraud-gateway,coredns,dns,0.8,helm/coredns
+PYYYYYY,orders-api,postgres:orders,database,0.9,repo orders-api

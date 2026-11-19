@@ -1,0 +1,30 @@
+runbook_id,service_id,title,source_url,body,tags
+rb-1,PXXXXXX,Checkout consumer lag,https://wiki.example/runbooks/checkout-consumer-lag,"## Symptoms
+Consumer lag elevated.
+
+## Known cause
+Duplicate records created through the REST API cause a deserialization poison pill.
+
+## Safe cleanup steps
+1. Pause consumer group checkout-api-workers
+2. Skip poison offset on partition with DeserializationException
+3. Run cleanup for duplicate order_id rows
+4. Resume consumer
+5. Do not restart Kafka brokers without approval",kafka;consumer;lag
+rb-2,PZZZZZZ,DNS resolution failures,https://wiki.example/runbooks/dns,"## Symptoms
+NXDOMAIN / UnknownHostException for internal hosts.
+
+## Steps
+1. Verify NXDOMAIN in app logs for the failing hostname
+2. Check the latest DNS zone push / CNAME changes
+3. Restore the missing record or fail over with network on-call approval
+4. Do not restart app pods as the first remediation",dns;nxdomain
+rb-3,PXXXXXX,Bad deploy rollback,https://wiki.example/runbooks/bad-deploy,"## Symptoms
+Error-rate spike immediately after a release.
+
+## Steps
+1. Confirm deploy timestamp aligns with the error spike
+2. Search logs for new exception fingerprints from the release
+3. Disable the related feature flag if present
+4. Rollback to the previous version if NPE / 5xx continues
+5. Require human approval before database migrations",deploy;rollback;5xx

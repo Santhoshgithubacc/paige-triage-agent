@@ -1,0 +1,6 @@
+sha,service,message,files,committed_at,source,incident_hint
+abc123,checkout-api,Tighten checkout deserializer; still allows duplicate order_id,consumer/deserializer.py,2026-11-19T18:28:00Z,github,inc001
+def456,checkout-api,Bump kafka client 3.6.1,build.gradle,2026-11-18T11:00:00Z,github,inc001
+dns789,fraud-gateway,Remove stale payments-fraud CNAME from internal zone draft,dns/internal.zone,2026-11-19T18:55:00Z,github,inc002
+pr15a,checkout-api,Introduce PricingEngine v2 without null guard on currency,pricing/PricingEngine.java,2026-11-19T19:40:00Z,github,inc003
+pr15b,checkout-api,Enable new_pricing_engine flag default true in prod overlay,deploy/prod.yaml,2026-11-19T19:50:00Z,github,inc003

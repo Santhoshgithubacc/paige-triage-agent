@@ -1,0 +1,4 @@
+alert_id,incident_id,summary,severity,source,component,error,metric,runbook_url,received_at
+alert-inc001,inc001,Consumer lag elevated for group checkout-api-workers,critical,datadog,checkout-api-workers,consumer_lag,kafka.consumer.lag,https://wiki.example/runbooks/checkout-consumer-lag,2026-11-19T18:55:00Z
+alert-inc002,inc002,DNS NXDOMAIN resolving payments-fraud.internal,critical,datadog,fraud-gateway,dns_nxdomain,dns.failure_rate,https://wiki.example/runbooks/dns,2026-11-19T19:10:00Z
+alert-inc003,inc003,checkout-api error rate > 5% after deploy v2.15.0,critical,datadog,checkout-api,http_5xx,error_rate,https://wiki.example/runbooks/bad-deploy,2026-11-19T20:05:00Z

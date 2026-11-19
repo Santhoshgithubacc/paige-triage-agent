@@ -1,0 +1,14 @@
+timestamp,service,metric,value,source,incident_hint
+2026-11-19T18:45:00Z,checkout-api,consumer_lag,1200,datadog,inc001
+2026-11-19T18:48:00Z,checkout-api,consumer_lag,18400,datadog,inc001
+2026-11-19T18:51:00Z,checkout-api,consumer_lag,66200,datadog,inc001
+2026-11-19T18:54:00Z,checkout-api,consumer_lag,152340,datadog,inc001
+2026-11-19T19:05:00Z,fraud-gateway,dns_failure_rate,0.01,datadog,inc002
+2026-11-19T19:08:00Z,fraud-gateway,dns_failure_rate,0.62,datadog,inc002
+2026-11-19T19:10:00Z,fraud-gateway,dns_failure_rate,0.91,datadog,inc002
+2026-11-19T19:10:00Z,fraud-gateway,error_rate,0.55,datadog,inc002
+2026-11-19T19:55:00Z,checkout-api,error_rate,0.02,datadog,inc003
+2026-11-19T20:02:00Z,checkout-api,error_rate,0.08,datadog,inc003
+2026-11-19T20:05:00Z,checkout-api,error_rate,0.37,datadog,inc003
+2026-11-19T20:05:00Z,checkout-api,p99_latency,2.4,datadog,inc003
+2026-11-19T18:54:00Z,orders-api,p99_latency,1.8,datadog,

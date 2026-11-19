@@ -1,0 +1,6 @@
+change_id,service_id,summary,actor,occurred_at,url,source,incident_hint
+chg-1,PXXXXXX,Deploy checkout-api v2.14.3 — consumer deserializer change,ci-bot,2026-11-19T18:30:00Z,https://github.com/example/checkout-api/releases/v2.14.3,github,inc001
+chg-2,PXXXXXX,Feature flag enable_strict_order_id=false,platform,2026-11-19T17:10:00Z,https://flags.example/strict-order-id,launchdarkly,inc001
+chg-3,PZZZZZZ,DNS zone update internal. — payments-fraud CNAME removed,netops,2026-11-19T19:02:00Z,https://dns.example/zones/internal,dns,inc002
+chg-4,PXXXXXX,Deploy checkout-api v2.15.0 — new PricingEngine,ci-bot,2026-11-19T20:01:00Z,https://github.com/example/checkout-api/releases/v2.15.0,github,inc003
+chg-5,PXXXXXX,Feature flag new_pricing_engine=true,platform,2026-11-19T20:01:30Z,https://flags.example/new-pricing-engine,launchdarkly,inc003

@@ -1,0 +1,6 @@
+incident_id,number,title,status,urgency,service_id,service_name,team,created_at,assignee
+inc001,5001,Consumer lag elevated on checkout-api,triggered,high,PXXXXXX,checkout-api,payments,2026-11-19T18:55:00Z,oncall-alice
+inc002,5002,DNS NXDOMAIN for payments-fraud.internal,triggered,high,PZZZZZZ,fraud-gateway,fraud,2026-11-19T19:10:00Z,oncall-devon
+inc003,5003,Checkout API 5xx spike after v2.15.0 deploy,triggered,high,PXXXXXX,checkout-api,payments,2026-11-19T20:05:00Z,oncall-sam
+inc-old-77,3910,Consumer lag from duplicate REST race,resolved,high,PXXXXXX,checkout-api,payments,2026-09-12T02:10:00Z,oncall-bob
+inc-rel-9,4200,Elevated error rate on orders-api,triggered,high,PYYYYYY,orders-api,orders,2026-11-19T18:50:00Z,oncall-cara

@@ -1,0 +1,14 @@
+timestamp,service,level,message,source,incident_hint
+2026-11-19T18:54:10Z,checkout-api,error,DeserializationException: duplicate order_id on topic checkout.orders,datadog,inc001
+2026-11-19T18:54:40Z,checkout-api,warn,consumer lag for group checkout-api-workers is 152340,datadog,inc001
+2026-11-19T18:53:01Z,checkout-api,info,Successfully processed batch size=100,datadog,inc001
+2026-11-19T18:52:22Z,checkout-api,error,OffsetCommit failed after poison pill at partition 3 offset 991203,datadog,inc001
+2026-11-19T19:09:40Z,fraud-gateway,error,DNS NXDOMAIN for payments-fraud.internal,datadog,inc002
+2026-11-19T19:09:55Z,fraud-gateway,error,java.net.UnknownHostException: payments-fraud.internal,datadog,inc002
+2026-11-19T19:08:10Z,fraud-gateway,warn,Retrying fraud score call attempt=3,datadog,inc002
+2026-11-19T19:07:00Z,coredns,error,SERVFAIL zone internal after zone file push,datadog,inc002
+2026-11-19T20:04:20Z,checkout-api,error,NullPointerException in PricingEngine.calculate after v2.15.0,datadog,inc003
+2026-11-19T20:04:35Z,checkout-api,error,HTTP 500 /v1/checkout count spike,datadog,inc003
+2026-11-19T20:03:50Z,checkout-api,warn,Feature flag new_pricing_engine=true evaluated,datadog,inc003
+2026-11-19T20:02:00Z,checkout-api,info,Deployed checkout-api v2.15.0,datadog,inc003
+2026-11-19T18:51:00Z,orders-api,warn,p99 latency 1.8s to postgres:orders,datadog,
